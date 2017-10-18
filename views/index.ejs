@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://getbootstrap.com/docs/4.0/examples/album/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://assets.liverpool.com.mx/assets/images/iconos/favicon.ico">
+
+    <title>Liverpool - ¡Elige tu santa!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/statics/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/statics/album.css" rel="stylesheet">
+    <script type="text/javascript">
+        
+     const action = "<%= action %>";
+
+    </script>
+  </head>
+
+  <body cz-shortcut-listen="true">
+
+  <!---------- NavBar ---------->
+   <nav class="navbar navbar-dark navbar-expand-md mb-4" style="background-color: #dc2a92;">
+      <a class="navbar-brand" href=""><img src="/statics/images/liverpool.png" width="100%" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+          </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="">Disabled</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+
+
+  <!---------- Login Jumbotron ---------->
+  <div id="login" class="jumbotron container text-center" >
+        <h1>¡Elige tu Santa!</h1>
+        <p class="lead">Somos adultos. Hace tiempo que sabemos que Santa no existe. O más bien, sabemos perfectamente quién es.</p>
+         <p class="">Y si podemos elegir, siempre vamos a preferir recibir un regalo que nos guste. <br /> Puesto que sabes quien es Santa, pídele lo que realmente quieres. Y asegúrate que te lo traiga.</p>
+          <div class="input-group w-50 p-3 text-center " style="margin: 0 auto;">
+          <form id="register" class="form-inline my-2 my-lg-0" action="index.html" >    
+            <input type="text" class="form-control" placeholder="correo@example.com" aria-label="correo@example.com" aria-describedby="basic-addon2">
+            <button  class="btn btn-primary btn-sm" type="submit">Registrate</button>
+          </form>
+          </div>                 
+  </div>
+
+  <!---------- Search Jumbotron ---------->
+
+<div id="browser" class="jumbotron container text-center">
+  <h1 class="display-4">¡Elige tu Santa!</h1>
+  <p class="lead">Comparte tu carta a Santa:  <input id="url-holder" class="form-control d-inline" type="text" placeholder="" readonly style="width:40%;" /></p> 
+  <hr class="my-4">
+  <p>Pídele lo que realmente quieres. Y asegúrate que te lo traiga.</p>
+  <div class="col-md-5 mb-5 " style="margin: 0 auto;" >
+        <form id="search" class="form-inline text-center" action="index.html" >
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-light my-2 my-sm-0"  type="submit">Search</button>
+        </form>    
+  </div>
+  <div id="cartita" class="list-group" style="max-height: 100px; overflow:scroll;">
+   
+  </div>  
+
+  <button id="guardar" type="button" class="btn btn-success" >Guardar</button>
+</div>
+
+<div class=" text-muted">
+      <div class="container">
+        <div id="productos-holder" class="row">
+         
+
+      </div>
+    </div>
+    </div>
+
+    <footer class="footer text-light" style="background-color: #dc2a92;">
+      <div class="container text-center">
+        <span class="sm">Términos y condiciones | Aviso de privacidad © | Liverpool | Todos los derechos reservados D.R. ®</span>
+      </div>
+    </footer>  
+
+
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/statics/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/statics/popper.min.js"></script>
+    <script src="/statics/holder.min.js"></script>
+    <script>
+      $(function () {
+        Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+      });
+    </script>
+    <script src="/statics/bootstrap.min.js"></script>
+    <script src="/statics/index.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/statics/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+  </html>

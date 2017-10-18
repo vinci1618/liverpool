@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://getbootstrap.com/docs/4.0/examples/album/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://assets.liverpool.com.mx/assets/images/iconos/favicon.ico">
+
+    <title>Liverpool - ¡Elige tu santa!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/statics/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/statics/album.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        
+     const action = "<%= action %>";
+
+    </script>    
+
+  </head>
+
+  <body cz-shortcut-listen="true">
+
+  <!---------- NavBar ---------->
+   <nav class="navbar navbar-dark navbar-expand-md mb-4" style="background-color: #dc2a92;">
+      <a class="navbar-brand" href=""><img src="/statics/images/liverpool.png" width="100%" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+          </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="">Disabled</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+
+
+
+  <!---------- Letter Jumbotron ---------->
+  <div id="MyLetter" class="jumbotron container text-center" >
+        <h1>¡Elige tu Santa!</h1>
+        <p class="lead">Esta es mi carta para esta Navidad.</p>
+         <p class=""></p>    
+
+        <div class="list-group">
+
+          <% products.forEach(function(products) { %>
+                    
+            <a target="_blank" href="https://www.liverpool.com.mx<%= products.url %>" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"></h5>
+                <small class="text-danger">$<%= products.cost %></small>
+              </div>
+              <p class="mb-1"><%= products.title %></p>
+              <small>Donec id elit non mi porta.</small>
+              <img class="float-right" src="<%= products.image %>" width="10%" />
+            </a>  
+          <% }); %>
+        </div>
+
+  </div>
+
+
+<div class=" text-muted">
+      <div class="container">
+        <div id="productos-holder" class="row">
+         
+
+      </div>
+    </div>
+    </div>
+
+    <footer class="footer text-light" style="background-color: #dc2a92;">
+      <div class="container text-center">
+        <span class="sm">Términos y condiciones | Aviso de privacidad © | Liverpool | Todos los derechos reservados D.R. ®</span>
+      </div>
+    </footer>  
+
+
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/statics/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/statics/popper.min.js"></script>
+    <script src="/statics/holder.min.js"></script>
+    <script>
+      $(function () {
+        Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+      });
+    </script>
+    <script src="/statics/bootstrap.min.js"></script>
+    <script src="/statics/index.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/statics/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+  </html>
